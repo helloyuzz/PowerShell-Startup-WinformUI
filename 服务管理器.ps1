@@ -134,8 +134,6 @@ $runButton = New-Object Windows.Forms.Button -Property @{
 }
 $form.Controls.Add($runButton)
 
-refresh_cssd
-
 
 function cssd_remove{
     Remove-Service -Name $cssd_3rdParty
@@ -189,6 +187,7 @@ function refresh_cssd{
     $txtArea.AppendText("\n")
 }
 
+refresh_cssd
 
 
 $form.ShowDialog()
